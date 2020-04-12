@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Générateur d\'attestation de déplacement dérogatoire</string>
+
+    <string-array name="motifs_sortie">
+        <item>Déplacement brefs/sport</item>
+        <item>Déplacement entre le domicile et le lieu de travail</item>
+        <item>Déplacement pour effectuer des achats</item>
+        <item>Consultations et soins</item>
+        <item>Déplacement pour motif familial</item>
+        <item>Convocation judiciaire ou administrative</item>
+        <item>Participation à des missions d\'interet général</item>
+    </string-array>
+
+    <string-array name="motifs_sortie_full">
+        <item>Déplacements brefs, dans la limite d\'une heure quotidienne et dans un rayon maximal d\'un kilomètre autour du domicile, liés soit à l\'activité physique individuelle des personnes, à l\'exclusion de toute pratique sportive collective et de toute proximité avec d\'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</item>
+        <item>Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu\'ils sont indispensables à l\'exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.</item>
+        <item>Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité dans des établissements dont les activités demeurent autorisées (liste sur gouvernement.fr).</item>
+        <item>Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d\'une affection de longue durée.</item>
+        <item>Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.</item>
+        <item>Convocation judiciaire ou administrative.</item>
+        <item>Participation à des missions d’intérêt général sur demande de l’autorité administrative.</item>
+    </string-array>
+
+    <string-array name="motifs_sortie_short">
+        <item>sport</item>
+        <item>travail</item>
+        <item>courses</item>
+        <item>sante</item>
+        <item>famille</item>
+        <item>judiciaire</item>
+        <item>missions</item>
+    </string-array>
+</resources>

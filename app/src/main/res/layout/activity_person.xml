@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person">
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onSaveClick"
+        android:text="Enregistrer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/eNom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : Dupont"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/ePrenom"
+                app:layout_constraintStart_toStartOf="@+id/ePrenom"
+                app:layout_constraintTop_toBottomOf="@+id/ePrenom" />
+
+            <TextView
+                android:id="@+id/tvVille"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                app:layout_constraintBottom_toTopOf="@+id/eVille"
+                app:layout_constraintStart_toStartOf="@+id/eVille" />
+
+            <EditText
+                android:id="@+id/ePrenom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="ex. : Jean"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.90" />
+
+            <TextView
+                android:id="@+id/tvLieuDeN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieu de naissance"
+                app:layout_constraintBottom_toTopOf="@+id/eLieuDeN"
+                app:layout_constraintStart_toStartOf="@+id/eLieuDeN" />
+
+            <TextView
+                android:id="@+id/tvDateDeN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance"
+                app:layout_constraintBottom_toTopOf="@+id/eDateDeN"
+                app:layout_constraintStart_toStartOf="@+id/eDateDeN" />
+
+            <EditText
+                android:id="@+id/eCP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : 75001"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/eVille"
+                app:layout_constraintStart_toStartOf="@+id/eVille"
+                app:layout_constraintTop_toBottomOf="@+id/eVille" />
+
+            <EditText
+                android:id="@+id/eAdresse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : 999 avenue de france"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/eLieuDeN"
+                app:layout_constraintStart_toStartOf="@+id/eLieuDeN"
+                app:layout_constraintTop_toBottomOf="@+id/eLieuDeN" />
+
+            <EditText
+                android:id="@+id/eDateDeN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : 01/01/1970"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/eNom"
+                app:layout_constraintStart_toStartOf="@+id/eNom"
+                app:layout_constraintTop_toBottomOf="@+id/eNom" />
+
+            <TextView
+                android:id="@+id/tvAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                app:layout_constraintBottom_toTopOf="@+id/eAdresse"
+                app:layout_constraintStart_toStartOf="@+id/eAdresse" />
+
+            <EditText
+                android:id="@+id/eVille"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : Paris"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/eAdresse"
+                app:layout_constraintStart_toStartOf="@+id/eAdresse"
+                app:layout_constraintTop_toBottomOf="@+id/eAdresse" />
+
+            <EditText
+                android:id="@+id/eLieuDeN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="ex. : Lyon"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/eDateDeN"
+                app:layout_constraintStart_toStartOf="@+id/eDateDeN"
+                app:layout_constraintTop_toBottomOf="@+id/eDateDeN" />
+
+            <TextView
+                android:id="@+id/tvNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                app:layout_constraintBottom_toTopOf="@+id/eNom"
+                app:layout_constraintStart_toStartOf="@+id/eNom" />
+
+            <TextView
+                android:id="@+id/tvPrenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pénom"
+                app:layout_constraintBottom_toTopOf="@+id/ePrenom"
+                app:layout_constraintStart_toStartOf="@+id/ePrenom" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <TextView
+                android:id="@+id/tvCodePostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code Postal"
+                app:layout_constraintBottom_toTopOf="@+id/eCP"
+                app:layout_constraintStart_toStartOf="@+id/eCP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
